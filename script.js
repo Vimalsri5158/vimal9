@@ -40,18 +40,22 @@ foo().then(data => {
     }
     
     document.body.append(container);
+    
     const cards = document.querySelectorAll(".card");
     cards.forEach(card => {
         // Add Bootstrap shadow class on hover
         card.addEventListener("mouseenter", () => {
             card.classList.add("shadow-lg"); 
         });
+        
+        
     // Remove Bootstrap shadow class when not hovering
         card.addEventListener("mouseleave", () => {
             card.classList.remove("shadow-lg"); 
         });
     });
-    // Add media query styles
+    
+    
     let currentPage = 1;
     const itemsPerPage = 6;
     
