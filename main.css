@@ -1,0 +1,45 @@
+body{
+   background-color:rgba(49, 209, 156, 0.51); 
+}
+
+
+h2{
+    text-align: center;
+}
+.card-header{
+    text-align: center;
+    background-color: rgba(120, 239, 150, 0.997);
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-title{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-text{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.card-body{
+    text-align: center;
+    
+}
+span{
+    font-size: 10px;
+    color:rgb(236, 149, 9);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.col-mb-4{
+    font-family: big caslon;
+    border-radius: 5px;
+  
+}
+    
+
+#a1{
+    border-radius: 5px;
+
+}
+
