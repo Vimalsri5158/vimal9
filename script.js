@@ -23,21 +23,22 @@ async function foo() {
 
 foo().then(data => {
     for (let i = 0; i < data.length; i++) {
-        row.innerHTML += `<div class="col-md-4">
-        <div class="card-box">
-        
-            <div class="card border-primary mb-3" id="a1">
-                <div class="card-header"><span>BooksName:</span><hr><b>${data[i].name}</b></div>
-                <h5 class="card-title" id="h1"><span>Author:</span><br>${data[i].authors}</h5>
-                <p class="card-text" id="h1"><span>Countries:</span><br><b>${data[i].country}</b></p>
-                <div class="card-body text-primary" id="h1"><span>ISBN:</span><br>${data[i].isbn}
-                <p class="card-text" id="h1"><span>RELEASED:</span><br>${data[i].released}</p>
-                <p class="card-text" id="h1"><span>NO.OF.PAGES:</span><br>${data[i].numberOfPages}</p>
+        row.innerHTML +=
+            `<div class="col-md-4">
+                <div class="card-box">
+                    <div class="card border-primary mb-3" id="a1">
+                        <div class="card-header"><span>BooksName:</span><hr><b>${data[i].name}</b></div>
+                        <h5 class="card-title" id="h1"><span>Author:</span><br>${data[i].authors}</h5>
+                        <p class="card-text" id="h1"><span>Countries:</span><br><b>${data[i].country}</b></p>
+                        <div class="card-body text-primary" id="h1"><span>ISBN:</span><br>${data[i].isbn}
+                        <p class="card-text" id="h1"><span>RELEASED:</span><br>${data[i].released}</p>
+                        <p class="card-text" id="h1"><span>NO.OF.PAGES:</span><br>${data[i].numberOfPages}</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        </div>`;
+            </div>`;
     }
+    
     document.body.append(container);
     const cards = document.querySelectorAll(".card");
     cards.forEach(card => {
@@ -45,11 +46,13 @@ foo().then(data => {
         card.addEventListener("mouseenter", () => {
             card.classList.add("shadow-lg"); 
         });
+        
     // Remove Bootstrap shadow class when not hovering
         card.addEventListener("mouseleave", () => {
             card.classList.remove("shadow-lg"); 
         });
     });
+    
     // Add media query styles
     const style = document.createElement("style");
     style.innerHTML = `
