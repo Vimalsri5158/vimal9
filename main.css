@@ -1,45 +1,68 @@
 body{
-   background-color:rgba(49, 209, 156, 0.51); 
+    background: linear-gradient(120deg, rgb(82, 226, 82) , rgba(0, 0, 255, 0.581) , rgba(255, 255, 0, 0.477) ) ; 
+    
 }
+@media(min-width: 720px) {
+    body{
+        background: repeating-radial-gradient( rgb(82, 226, 82)20px,rgba(212, 255, 0, 0.532), rgba(0, 255, 128, 0.477)50px ) ;
+    }
+}
+ 
+ .card-header{
+     text-align: center;
+     background-color: rgba(120, 239, 150, 0.997);
+     font-family: 'Times New Roman', Times, serif;
 
+    
+ }
+ @media(min-width: 720px) {
+    .card-header{
+        background-color: aqua;
+    }
+ }
+ .card-title{
+     text-align: center;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ .card-text{
+     text-align: center;
+     font-family: 'Times New Roman', Times, serif;
+     
+ }
+ .card-body{
+     text-align: center;
+     
+     
+ }
+ span{
+     font-size: 10px;
+     color:rgb(236, 149, 9);
+     font-weight: bold;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ .col-mb-4{
+     font-family: big caslon;
+     border-radius: 5px;
+   
+ }
+     
+ 
+ #a1{
+     border-radius: 5px;
+}
 
 h2{
     text-align: center;
-}
-.card-header{
-    text-align: center;
-    background-color: rgba(120, 239, 150, 0.997);
-    font-family: 'Times New Roman', Times, serif;
-}
-.card-title{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-.card-text{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    
-}
-.card-body{
-    text-align: center;
-    
-}
-span{
-    font-size: 10px;
-    color:rgb(236, 149, 9);
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.col-mb-4{
-    font-family: big caslon;
-    border-radius: 5px;
-  
-}
-    
-
-#a1{
-    border-radius: 5px;
+    color: maroon;
+    padding: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 
 }
+.card-box{
+    padding-top: 25px;
+}
 
+
+ 
+ 
