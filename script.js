@@ -25,10 +25,10 @@ async function book() {
 }
 
 book().then((data) => {
-  let filteredData = data; // Store the original data initially
+  let filteredData = data; 
 
   function displayBooks(data) {
-    row.innerHTML = ""; // Clear the previous books
+    row.innerHTML = ""; 
 
     for (let i = 0; i < data.length; i++) {
       row.innerHTML += `
@@ -54,6 +54,7 @@ book().then((data) => {
       card.addEventListener("mouseenter", () => {
         card.classList.add("shadow-lg");
       });
+      
       // Remove Bootstrap shadow class when not hovering
       card.addEventListener("mouseleave", () => {
         card.classList.remove("shadow-lg");
